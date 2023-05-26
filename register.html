@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/mystyles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1 class="logo">The Fashion Pet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">register</a>
+        </nav>
+        <div class ="social-media">
+            <img src="img/5282541_fb_social media_facebook_facebook logo_social network_icon.png" alt="">
+            <img src="img/5282544_camera_instagram_social media_social network_instagram logo_icon.png" alt="">
+            <img src="img/5282551_tweet_twitter_twitter logo_icon.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <h2>Register</h2>
+        <div id="info">
+            
+        </div>
+    </main>
+
+    <form>
+        <label for="Name">Name:</label>
+        <input type="text" id="txtName"><br>
+
+        <label for="Age">Age:</label>
+        <input type="text" id="txtAge" name="Name"><br>
+
+        <label for="Gender">Gender:</label>
+        <input type="text" id="txtGender" name="Name"><br>
+
+        <label for="Breed">Breed:</label>
+        <input type="text" id="txtBreed" name="Name"><br>
+
+        <label for="Service">Service:</label>
+<select id="txtService" name="Service">
+  <option value="Grooming">Grooming</option>
+  <option value="vaccine">Vaccine</option>
+  <option value="nails">Nail Trimming</option>
+</select><br>
+</form>
+<input type="submit" onclick="register()" value="Register">
+
+    <footer>
+
+
+    </footer>
+    <script src="./scripts/register.js"></script>
+    
+</body>
+</html>

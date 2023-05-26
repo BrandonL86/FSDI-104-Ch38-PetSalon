@@ -1,0 +1,93 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Index */
+
+
+/* Header */
+
+.site-header{
+    width: auto;
+    height: 100px;
+    background-color:#362526;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px; */
+}
+
+.logo{
+    color: white;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+nav{
+    margin:5px;
+}
+
+a {
+    padding: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+} 
+
+.social-media {
+    margin-right: 30px;
+    color: white;
+
+}
+/* header */
+
+/* body */
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* main */
+
+.Container{
+    background-image:url("/img/karsten-winegeart-featured-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    background-attachment: fixed;
+    background-position-x: 70%;
+    width: auto;
+    height: 700px;
+    display: flex;
+}
+
+.con-text{
+    width: 400px;
+    justify-content: left;
+    margin-top: 200px;
+    margin-left: 40px;
+    text-align: left;
+    line-height: 2;
+}
+
+main{
+    margin-top: auto;
+    padding: auto;
+    text-align: left;
+}
+
+.story{
+    width: auto;
+    height: auto;
+    margin:70px;
+    display: flex;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+
+}
