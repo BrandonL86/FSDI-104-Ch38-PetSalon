@@ -5,58 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/mystyles.css">
-    <title>Document</title>
+    <title>Register</title>
 </head>
 <body>
 
     <header class="site-header">
-        <h1 class="logo">The Fashion Pet</h1>
+        <a href="index.html"><h1 class="logo" id="logo-go">The Fashion Pet</h1></a>
         <nav>
-            <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
-            <a href="register.html">register</a>
+            <a href="register.html">Register</a>
         </nav>
         <div class ="social-media">
-            <img src="img/5282541_fb_social media_facebook_facebook logo_social network_icon.png" alt="">
-            <img src="img/5282544_camera_instagram_social media_social network_instagram logo_icon.png" alt="">
-            <img src="img/5282551_tweet_twitter_twitter logo_icon.png" alt="">
+            <img src="img/fb.png" alt="" width="50px" height="50px">
+            <img src="img/insta.png" alt="" width="50px" height="50px">
+            <img src="img/twitter.png" alt="" width="50px" height="50px">
         </div>
     </header>
 
     <main>
-        <h2>Register</h2>
         <div id="info">
             
         </div>
+        <form>
+            <div class="title">
+                <h2>Register</h2>
+            </div>
+            <br>
+            <div class="form-box">
+                <label for="Name">Name:</label>
+                <input type="text" id="txtName"><br>
+        
+                <label for="Age">Age:</label>
+                <input type="text" id="txtAge" name="Name"><br>
+        
+                <label for="Gender">Gender:</label>
+                <input type="text" id="txtGender" name="Name"><br>
+        
+                <label for="Breed">Breed:</label>
+                <input type="text" id="txtBreed" name="Name"><br>
+        
+                <label for="Service">Service:</label>
+                <select id="txtService" name="Service">
+                <option value="Grooming">Grooming</option>
+                <option value="vaccine">Vaccine</option>
+                <option value="nails">Nail Trimming</option>
+                </select><br>
+
+                <label for="Payment Type">Payment:</label>
+                <select id="txtPayment" name="paymentType">
+                <option value="Debit">Debit</option>
+                <option value="Credit">Credit</option>
+                <option value="Venmo">Venmo</option>
+                </select><br>
+            </div>
+    </form>
+    <div class="main-input">
+        <button type="button" onclick="register()" value="Register">Register</button>
+    </div>
+    <div id="pets"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> Gender</th>
+                    <th> Breed </th>
+                    <th> Service</th>
+                    <th> Payment Type</th>
+                </tr>
+            </thead>
+            <tbody id="petTable">
+                <tr class="table-row">
+                    <td>Scooby</td>
+                    <td>60</td>
+                    <td>Male</td>
+                    <td>Dane</td>
+                    <td>Grooming</td>
+                </tr>
+            </tbody>
+            </table>
     </main>
 
-    <form>
-        <label for="Name">Name:</label>
-        <input type="text" id="txtName"><br>
 
-        <label for="Age">Age:</label>
-        <input type="text" id="txtAge" name="Name"><br>
+<footer>
+    <h1 class="logo">The Fashion Pet</h1>
+    <div class="footer-block">
+        <h4>Contact Info</h4>
+        <div id="info">
+            <br>
+            <p>fashionpet@info.com</p>
+            <p>6659987311</p>
+            <p>Tijuana, Mexico 23456</p>
+        </div>
+    </div>
+    <div class="footer-block">
+        <h4>About Us</h4>
+        <br>
+        <p>Your pet is in good hands with our team of professional groomers<br> We offer only top quality service.</p>
+    </div>
+    <div class="footer-block">
+        <h4>Social Media</h4>
+        <br>
+        <img src="img/fb.png" alt="" width="50px" height="50px">
+        <img src="img/insta.png" alt="" width="50px" height="50px">
+        <img src="img/twitter.png" alt="" width="50px" height="50px"> 
+    </div>
 
-        <label for="Gender">Gender:</label>
-        <input type="text" id="txtGender" name="Name"><br>
 
-        <label for="Breed">Breed:</label>
-        <input type="text" id="txtBreed" name="Name"><br>
-
-        <label for="Service">Service:</label>
-<select id="txtService" name="Service">
-  <option value="Grooming">Grooming</option>
-  <option value="vaccine">Vaccine</option>
-  <option value="nails">Nail Trimming</option>
-</select><br>
-</form>
-<input type="submit" onclick="register()" value="Register">
-
-    <footer>
-
-
-    </footer>
+</footer>
+    <script src="./scripts/displaypets.js"></script>
     <script src="./scripts/register.js"></script>
     
 </body>

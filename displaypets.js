@@ -21,11 +21,32 @@ function displayPetCard()
         <p> Service: ${pet.service}</p>
         </div>
         `;
+    
     }
     console.log(card);
     //insert the template into HTML element
     DIV.innerHTML = card;
 
+}
+
+function displayPetTable(){
+    let tr ="";
+    const TABLE = document.getElementById("petTable");
+    for (let i=0; i < petSalon.pets.length; i++){
+        let pet = petSalon.pets[i];
+        tr+=`
+        <tr id="${pet.id}" class="table-row">
+                    <td>${pet.name}</td>
+                    <td>${pet.age}</td>
+                    <td>${pet.gender}</td>
+                    <td>${pet.breed}</td>
+                    <td>${pet.service}</td>
+                    <td>${pet.payment}</td>
+                    <td><button onclick="deletePet(${pet.id});"> Delete </button> </td>
+                </tr>
+        `;
+    }
+    TABLE.innerHTML = tr;
 }
 
 function displayInformation()
@@ -36,7 +57,7 @@ function displayInformation()
     <p> name: ${petSalon.pets[0].name}</p>
     <p> name: ${petSalon.pets[1].name}</p>  
     `;
-    
+    petSalon.pets.push(newPet);
 }
 
 
